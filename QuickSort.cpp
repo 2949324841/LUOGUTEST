@@ -9,7 +9,7 @@ using namespace std;
 即将大范围划分为小范围问题解决
 
 */
-int QuickSortM(int *arr,int start,int end);
+
 void swap(int &a,int &b);
 void QuickSort(int *arr,int start,int end);
 int main()
@@ -25,28 +25,7 @@ int main()
     return 0;
 }
 
-int QuickSortM(int *arr,int start,int end)
-{
-    int i=start;
-    int j=end;
-    int BaseValue=arr[start];
-    while(i!=j){
-    while(i<j&&arr[j]>=BaseValue)
-    j--;
-    arr[i]=arr[j];
 
-    
-    while(i<j&&arr[j]<=BaseValue)
-    i++;
-    arr[j]=arr[i];
-    };
-    
-    arr[i]=BaseValue;
-    
-
-    return i;
-
-}
 void swap(int &a,int &b)
 {
     int temp;
